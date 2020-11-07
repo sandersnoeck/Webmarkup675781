@@ -1,0 +1,10 @@
+body {
+  background-color: powderblue;
+}
+header  {
+    height: 200px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+	line-height: 12px;
+}
