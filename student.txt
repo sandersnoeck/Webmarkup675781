@@ -1,4 +1,4 @@
 Student name: Sander Snoeck
 Student number: 675781
 Student class: INF1A2
-URL student GitHub repository: https://github.com/sandersnoeck/webmarkup675781
+URL student GitHub repository: https://github.com/sandersnoeck/Webmarkup675781
