@@ -1,14 +1,14 @@
 body {
-  background-color: #ddddff;
+  background-color: powderblue;
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
 }
 header {
-    height: 325px;
+    height: 300px;
     position: relative;
     width: 100%;
     text-align: center;
-	line-height: 25px;
+	line-height: 12px;
 	color: navy;
 	text-shadow: 2px 2px #ff0000;
 }
@@ -17,16 +17,11 @@ header {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333366;
+  background-color: #333333;
 }
 .navigation li {
 	float: left;
-	width: 25%;
-}
-.navigation li #selected {
-	background-color:#555588;
-	text-decoration: underline;
-	color: orange;
+	width: 33%;
 }
 .navigation li a {
   display: block;
@@ -40,20 +35,17 @@ header {
   color: yellow;
 }
 
-#flex-articles {
-	display: flex;
-	flex-wrap: wrap;
+#articles {
 }
 #solarEnergyVideo {
 	width: 100%;
-	display: flex;
 }
 .shopArticle {
 	height: 250px;
-	display: flex;
+	width: 70%;
 }
 .shopArticle p, .shopArticle h2{
-	width: 700px;
+	width: 60%;
 	padding-left: 20px;
 	padding-top: 10px;
 }
@@ -77,14 +69,11 @@ header {
 	font-size: large;
 	background-color: cornsilk;
 	height: 800px;
+	width: 30%;
 }
 .fiveReasons h2 {
 	margin-left: 10px;
 	color: brown;
-}
-.fiveReasons li {
-	margin-bottom: 20px;
-	color: green;
 }
 footer #siteBottom {
 	height: 45px;
@@ -105,58 +94,70 @@ footer .cookieStatement a {
 	text-decoration: none;
 	text-shadow: 2px 2px #ff0000;
 }
+/*howsolarworks*/
+.simpleShopImage {
+	width:250px;
+	height:150px;
+}
+.hsw-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+ 
+  grid-gap: 10px;
+  background-color: #333333;
+  padding: 10px;
+  grid-template-areas:
+    "hsw2 hsw1 hsw3"
+    "hsw2 hsw1 hsw3"
+    "hsw5 hsw1 hsw3"
+    "hsw5 hsw1 hsw4"
+    "hsw5 hsw1 hsw4"
+    "hsw5 hsw1 hsw4"
+    "hsw5 hsw6 hsw6";
+}
+.hsw-grid-container > article {
+	padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#hsw-1 {
+	grid-area: hsw1;
+}
+#hsw-2 {
+	grid-area: hsw2;
+}
+#hsw-3 {
+	grid-area: hsw3;
+}
+#hsw-4 {
+	grid-area: hsw4;
+}
+#hsw-5 {
+	grid-area: hsw5;
+}
+#hsw-6 {
+	grid-area: hsw6;
+}
+#shopImages {
+	display: grid;
+}
+#shopImages > figure {
+	padding: 10px;
+}
+#shopImages > #simpleShop2 {
+	grid-column-start: 2;
+}
+#shopImages > #simpleShop3 {
+	grid-column-start: 3;
+}
+
 
 /* TABLET MODE 1280 */
 @media only screen and (max-width: 1280px) {
-	.fiveReasons {
-		order: 0;
-	}
-	#solarEnergyVideo {
-		order: 1;
-	}
-	#articleThree {
-		order: 2;
-	}
-	#articleTwo {
-		order: 3;
-	}
-	#articleOne {
-		order: 4;
-	}
 	
-	body {
-		background-color: #ffddff;
-	}
-	#siteLogo {
-		width: 480px;
-	}
 }
 
 /* MOBILE MODE 480 */
-@media only screen and (max-width: 480px) {
-	.fiveReasons {
-		order: 0;
-	}
-	#solarEnergyVideo {
-		display: none;
-	}
-	#articleThree {
-		order: 1;
-	}
-	#articleTwo {
-		order: 2;
-	}
-	#articleOne {
-		order: 3;
-	}
+@media only screen and (max-width: 1280px) {
 	
-	body {
-		background-color: #ffdddd;
-	}
-	#siteLogo {
-		display: none;
-	}
-	header {
-		height: 120px;
-	}
 }
