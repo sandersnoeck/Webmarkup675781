@@ -1,14 +1,14 @@
 body {
-  background-color: powderblue;
+  background-color: #ddddff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
 }
 header {
-    height: 300px;
+    height: 325px;
     position: relative;
     width: 100%;
     text-align: center;
-	line-height: 12px;
+	line-height: 25px;
 	color: navy;
 	text-shadow: 2px 2px #ff0000;
 }
@@ -17,11 +17,16 @@ header {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #333366;
 }
 .navigation li {
 	float: left;
 	width: 25%;
+}
+.navigation li #selected {
+	background-color:#555588;
+	text-decoration: underline;
+	color: orange;
 }
 .navigation li a {
   display: block;
@@ -35,16 +40,19 @@ header {
   color: yellow;
 }
 
-#articles {
+#flex-articles {
+	display: flex;
 	flex-wrap: wrap;
 }
 #solarEnergyVideo {
 	width: 100%;
+	display: flex;
 }
 .shopArticle {
 	height: 250px;
+	display: flex;
 }
-.shopArticle p,h2{
+.shopArticle p, .shopArticle h2{
 	width: 700px;
 	padding-left: 20px;
 	padding-top: 10px;
@@ -70,6 +78,14 @@ header {
 	background-color: cornsilk;
 	height: 800px;
 }
+.fiveReasons h2 {
+	margin-left: 10px;
+	color: brown;
+}
+.fiveReasons li {
+	margin-bottom: 20px;
+	color: green;
+}
 footer #siteBottom {
 	height: 45px;
 }
@@ -88,4 +104,59 @@ footer .cookieStatement a {
 	color: #FFF;
 	text-decoration: none;
 	text-shadow: 2px 2px #ff0000;
+}
+
+/* TABLET MODE 1280 */
+@media only screen and (max-width: 1280px) {
+	.fiveReasons {
+		order: 0;
+	}
+	#solarEnergyVideo {
+		order: 1;
+	}
+	#articleThree {
+		order: 2;
+	}
+	#articleTwo {
+		order: 3;
+	}
+	#articleOne {
+		order: 4;
+	}
+	
+	body {
+		background-color: #ffddff;
+	}
+	#siteLogo {
+		width: 480px;
+	}
+}
+
+/* MOBILE MODE 480 */
+@media only screen and (max-width: 480px) {
+	.fiveReasons {
+		order: 0;
+	}
+	#solarEnergyVideo {
+		display: none;
+	}
+	#articleThree {
+		order: 1;
+	}
+	#articleTwo {
+		order: 2;
+	}
+	#articleOne {
+		order: 3;
+	}
+	
+	body {
+		background-color: #ffdddd;
+	}
+	#siteLogo {
+		display: none;
+	}
+	header {
+		height: 120px;
+	}
 }
