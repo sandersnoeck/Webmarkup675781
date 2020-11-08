@@ -221,14 +221,13 @@ table.eusolar-table {
 	border: 1px solid black; 
 	background-color: white;
 }
-/*it wont let me use first-child and nth-child at the same time please forgive me*/
 .eusolar-table td:first-child {
 	background-color: #FF0;
 }
-.eusolar-table tr:nth-child(even) td {
+.eusolar-table tr:nth-child(even) td+td {
     background-color: #CFF;
 }
-.eusolar-table tr:nth-child(odd) td {
+.eusolar-table tr:nth-child(odd) td+td {
     background-color: #FFF;
 }
 #sideImages {
