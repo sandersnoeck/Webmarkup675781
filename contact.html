@@ -1,3 +1,4 @@
+<!--Checked using validator.w3.org Result: Document checking completed. No errors or warnings to show.-->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -6,8 +7,13 @@
 		<meta name="description" content="Take a dive into solar energy with SOL Solar Power.">
 		<meta name="keywords" content="SOL, SOL Power, SOL Solar Power, Solar Power, Solar Energy, Solar, Solar Panel">
 		<title>Contact | SOL Solar Power</title>
+		<!--reference to the CSS stylesheet -->
 		<link rel="stylesheet" href="css/stylesheet.css">
+		<!--adds google's notable font -->
 		<link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+		<!--adds a favicon for 32px and 16px resolution-->
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
 	</head>
 	<body>
 		<header>
@@ -23,8 +29,8 @@
 			</ul>
 		</nav>
 
-		<h2 class="pageTitle">Contact Us</h2>
 		<article class="pageDesc">
+			<h2 class="pageTitle">Contact Us</h2>
 			<p>Your experience is important to us. Please contact us through this form if you have any questions. Hitting 'Submit' will send your name, e-mail and message to us and we will hopefully respond to you soon through the provided e-mail address.</p>
 		</article>
 		
@@ -55,27 +61,28 @@
 			</figure>
 		</aside>
 		
-		<section id="contactSection">
-			<form class="contactForm" action="https://i-want-solar-energy.com/testform.php" method="post">
-				<fieldset>
-					<legend><p>Visitor Contact</p></legend>
-					<label for="name" class="contactFormLabel">Name</label>
-					<input type="text" id="formName" name="name" placeholder="John Doe">
-					
-					<label for="email" class="contactFormLabel">E-mail</label>
-					<input type="email" id="formEmail" name="email" placeholder="john.doe@example.com">
+		<!-- the user form-->
+		<form class="contactForm" action="https://i-want-solar-energy.com/testform.php" method="post">
+			<fieldset>
+				<legend>Contact Form</legend>
+				<label for="formName" class="contactFormLabel">Name</label>
+				<input type="text" id="formName" name="name" placeholder="John Doe">
+				
+				<label for="formEmail" class="contactFormLabel">E-mail</label>
+				<input type="email" id="formEmail" name="email" placeholder="john.doe@example.com">
 
-					<label for="message" class="contactFormLabel">Message</label>
-					<textarea id="formMessage" name="message" placeholder="Write a message here"></textarea>
+				<label for="formMessage" class="contactFormLabel">Message</label>
+				<textarea id="formMessage" name="message" placeholder="Write a message here"></textarea>
+	
+				<input type="submit" value="Send form">
+			</fieldset>
+		</form>
 		
-					<input type="submit" value="Send form">
-				</fieldset>
-			</form>
-		</section>
-		
-		<footer class="siteBottom">
-			<section class="name"><p>&#169; 2020 Sander Snoeck</p></section>
-			<section class="cookieStatement"><a href="">Cookie statement</a></section>
+		<footer class="nameFooter">
+			<p>Website by Sander Snoeck &#169; 2020</p>
+		</footer>
+		<footer class="cookieStatement">
+			<a href="">Cookie statement</a>
 		</footer>
 	</body>
 </html> 
