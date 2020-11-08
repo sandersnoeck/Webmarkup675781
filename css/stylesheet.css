@@ -1,13 +1,91 @@
 body {
   background-color: powderblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
 }
-header  {
-    height: 200px;
+header {
+    height: 300px;
     position: relative;
     width: 100%;
     text-align: center;
 	line-height: 12px;
+	color: navy;
+	text-shadow: 2px 2px #ff0000;
+}
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+.navigation li {
+	float: left;
+	width: 25%;
+}
+.navigation li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+.navigation li a:hover {
+  background-color: #111111;
+  color: yellow;
+}
+
+#articles {
+	flex-wrap: wrap;
 }
 #solarEnergyVideo {
 	width: 100%;
+}
+.shopArticle {
+	height: 250px;
+}
+.shopArticle p,h2{
+	width: 700px;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+.shopImage {
+	float: right;
+    height: 150px;
+    width: 250px;
+	margin-left: 10px;
+	flex-wrap: wrap;
+}
+.imgCopyright {
+	color: gray;
+	font-style: italic;
+}
+.figure {
+	float: right;
+	margin-top: -150px;
+}
+.fiveReasons {
+	float: right;
+	font-size: large;
+	background-color: cornsilk;
+	height: 800px;
+}
+footer #siteBottom {
+	height: 45px;
+}
+footer .name {
+	background-color: gray;
+	color: white;
+}
+footer .cookieStatement {
+    background-color: #FA0;
+    opacity: 50%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+footer .cookieStatement a {
+	color: #FFF;
+	text-decoration: none;
+	text-shadow: 2px 2px #ff0000;
 }
