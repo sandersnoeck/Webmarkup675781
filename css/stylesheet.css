@@ -5,6 +5,7 @@ body {
   margin: 0px;
 }
 header {
+	font-family: 'Notable', sans-serif;
     height: 300px;
     position: relative;
     width: 100%;
@@ -17,7 +18,15 @@ header > h1 + h2 {
 	font-style: italic;
 	color: white;
 	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
-	font-family: 'Notable';
+}
+.pageTitle {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.pageDesc {
+	border: 2px solid blue;
+	padding: 5px;
+	margin: 5px;
 }
 p::first-letter {
 	font-size: 125%;
@@ -109,7 +118,7 @@ footer .cookieStatement a {
 	text-shadow: 2px 2px #ff0000;
 	z-index: 9999;
 }
-/*howsolarworks*/
+/*how solar works*/
 .simpleShopImage {
 	width:250px;
 	height:150px;
@@ -120,7 +129,7 @@ footer .cookieStatement a {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
  
   grid-gap: 10px;
-  background-color: #333333;
+  background-color: #333388;
   padding: 10px;
   grid-template-areas:
     "hsw2 hsw1 hsw3"
@@ -188,10 +197,6 @@ table.eusolar-table {
 }
 .eusolar-table td:first-child {
 	background-color: yellow;
-}
-#eusolar-article p {
-	border: 1px solid blue;
-	padding: 5px;
 }
 
 #sideImages {
